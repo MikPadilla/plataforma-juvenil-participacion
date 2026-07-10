@@ -1,6 +1,6 @@
 ## Identidad del proyecto
 
-Nombre del estudiante: Naiker Padilla
+Nombre del estudiante: Maiker Padilla
 
 Nombre de la plataforma:
 Plataforma Juvenil de Participación
