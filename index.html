@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma Juvenil de Participación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <div class="logo"><span>🌀</span><span>Plataforma Juvenil</span></div>
+        <p class="lead">Espacio creativo para participación juvenil, transparencia y control ciudadano con una estética moderna y funcionalidades dinámicas.</p>
+      </div>
+      <button id="themeToggle">Activar modo suave</button>
+    </header>
+
+    <section class="card">
+      <span class="badge" id="statusBadge">Modo de alto contraste</span>
+      <h1>Plataforma Juvenil de Participación</h1>
+      <p>Esta práctica académica muestra cómo una plataforma juvenil puede presentar información clara, segura y atractiva sin usar datos personales reales.</p>
+      <ul class="feature-list">
+        <li>Transparencia y trazabilidad como valores centrales.</li>
+        <li>Interfaz aesthetic con efecto glassmorphism y animaciones suaves.</li>
+        <li>Botón interactivo para cambiar la atmósfera de la página.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Advertencia</h2>
+      <p>Este sistema no corresponde a una elección real y no debe usar datos personales verdaderos. Todo es un ejercicio formativo.</p>
+    </section>
+
+    <section class="card">
+      <h2>Clase 26</h2>
+      <p>En esta clase iniciamos el repositorio, creamos la rama de trabajo y dejamos la primera evidencia del proyecto en GitHub.</p>
+    </section>
+
+    <section class="card">
+      <h2>Funciones cheveres</h2>
+      <ul class="feature-list">
+        <li>Modo suave y alternar contraste.</li>
+        <li>Animaciones hover en las tarjetas y botones.</li>
+        <li>Hora y fecha dinámicas: <strong id="horaActual"></strong></li>
+      </ul>
+    </section>
+
+    <div class="bottom">
+      <p>Listo para seguir construyendo una plataforma juvenil con más energía, estilo y participación.</p>
+      <small>✨ Última actualización automática del reloj</small>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('themeToggle');
+      const status = document.getElementById('statusBadge');
+      const horaActual = document.getElementById('horaActual');
+
+      function updateTime() {
+        const now = new Date();
+        horaActual.textContent = now.toLocaleString('es-ES', {
+          weekday: 'long',
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+      }
+
+      updateTime();
+      setInterval(updateTime, 30000);
+
+      themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('soft-mode');
+        const softMode = document.body.classList.contains('soft-mode');
+        status.textContent = softMode ? 'Modo suave activado' : 'Modo de alto contraste';
+        themeToggle.textContent = softMode ? 'Activar modo contraste' : 'Activar modo suave';
+      });
+    });
+  </script>
+</body>
+</html>
