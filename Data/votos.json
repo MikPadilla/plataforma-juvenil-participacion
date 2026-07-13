@@ -16,5 +16,35 @@
     "identificacion": "123456798",
     "candidato": "pepito",
     "fecha": "2026-07-13T22:10:32.440Z"
+  },
+  {
+    "id": 1783985931883,
+    "identificacion": "7453214856",
+    "candidato": "Fabio",
+    "fecha": "2026-07-13T23:38:51.883Z"
+  },
+  {
+    "id": 1783985939592,
+    "identificacion": "953223",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:38:59.592Z"
+  },
+  {
+    "id": 1783985946548,
+    "identificacion": "1298638963",
+    "candidato": "pepito",
+    "fecha": "2026-07-13T23:39:06.548Z"
+  },
+  {
+    "id": 1783985953484,
+    "identificacion": "25698563",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:39:13.484Z"
+  },
+  {
+    "id": 1783985960525,
+    "identificacion": "845215654",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:39:20.525Z"
   }
 ]
