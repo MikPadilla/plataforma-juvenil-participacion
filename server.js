@@ -3,12 +3,12 @@ const fs =require("fs");
 const path =require("path");
 
 const app =express();
-const PORT = 300;
+const PORT = 3000;
 
 app.use(express.json());
 app.use(express.static(__dirname));
 
-const rutaCandidatos = path.join(__dirname, "Data", "candidatos.json"");
+const rutaCandidatos = path.join(__dirname, "Data", "candidatos.json");
 
     function leerCandidatos() {
         const data = fs.readFileSync(rutaCandidatos, "utf8");
@@ -28,7 +28,7 @@ const rutaCandidatos = path.join(__dirname, "Data", "candidatos.json"");
         const nuevoCandidato ={
             id: Date.now(),
             nombre: req.body.nombre,
-            rol req.body.rol,
+            rol: req.body.rol,
             propuesta: req.body.propuesta, 
             estado: "Perfil de práctica académica"
         };
