@@ -16,5 +16,59 @@
     "identificacion": "123456798",
     "candidato": "pepito",
     "fecha": "2026-07-13T22:10:32.440Z"
+  },
+  {
+    "id": 1783986422713,
+    "identificacion": "84126",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:47:02.713Z"
+  },
+  {
+    "id": 1783986429295,
+    "identificacion": "785214552",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:47:09.295Z"
+  },
+  {
+    "id": 1783986437592,
+    "identificacion": "741852963",
+    "candidato": "Fabio",
+    "fecha": "2026-07-13T23:47:17.592Z"
+  },
+  {
+    "id": 1783986451033,
+    "identificacion": "7418529147",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:47:31.033Z"
+  },
+  {
+    "id": 1783986458391,
+    "identificacion": "147258369",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:47:38.391Z"
+  },
+  {
+    "id": 1783986465539,
+    "identificacion": "963741852",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:47:45.539Z"
+  },
+  {
+    "id": 1783986474561,
+    "identificacion": "741963852",
+    "candidato": "pepito",
+    "fecha": "2026-07-13T23:47:54.561Z"
+  },
+  {
+    "id": 1783986481614,
+    "identificacion": "987456321",
+    "candidato": "Pikachu",
+    "fecha": "2026-07-13T23:48:01.614Z"
+  },
+  {
+    "id": 1783986487566,
+    "identificacion": "12389456",
+    "candidato": "Fabio",
+    "fecha": "2026-07-13T23:48:07.566Z"
   }
 ]
