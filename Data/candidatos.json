@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": 1783975389986,
+    "nombre": "pepito",
+    "rol": "Veedor",
+    "propuesta": "Proteger los derechos",
+    "estado": "Perfil de práctica académica"
+  },
+  {
+    "id": 1783975603204,
+    "nombre": "Pikachu",
+    "rol": "Veedor",
+    "propuesta": "Electrificar con mucha energía los derechos",
+    "estado": "Perfil de práctica académica"
+  },
+  {
+    "id": 1783975919087,
+    "nombre": "Fabio",
+    "rol": "Veedor",
+    "propuesta": "Diseñar al mundo democrático",
+    "estado": "Perfil de práctica académica"
+  }
+]

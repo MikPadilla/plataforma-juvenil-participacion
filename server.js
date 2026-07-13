@@ -39,7 +39,7 @@ const rutaCandidatos = path.join(__dirname, "Data", "candidatos.json");
             });
         }
 
-        const candidatos = leerCandidatos;
+        const candidatos = leerCandidatos();
         candidatos.push(nuevoCandidato);
         guardarCandidatos(candidatos);
 
@@ -50,7 +50,7 @@ const rutaCandidatos = path.join(__dirname, "Data", "candidatos.json");
     });
 
         app.listen(PORT, function (){
-            console.log("Servidor funcionando en http://localhost" + PORT);
+            console.log("Servidor funcionando en http://localhost:" + PORT);
         });
     
 
