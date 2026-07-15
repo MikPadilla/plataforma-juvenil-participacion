@@ -102,7 +102,31 @@ function guardarVotos(votos) {
     });
 });
 
-    app.listen(PORT, function (){
+    app.get("/", function (req, res) {
+        res.sendFile(path.join(__dirname, "index.html"));
+    });
+
+    app.get("/alerta-n8n", function (req, res) {
+        res.sendFile(path.join(__dirname, "alerta-n8n.html"));
+    });
+
+    app.get("/:page", function (req, res, next) {
+        if (req.params.page.includes(".")) {
+            return next();
+        }
+
+        const rutaPagina = path.join(__dirname, `${req.params.page}.html`);
+
+        if (fs.existsSync(rutaPagina)) {
+            return res.sendFile(rutaPagina);
+        }
+
+        next();
+    });
+
+    app.listen(PORT, "0.0.0.0", function (){
         console.log("Servidor funcionando en http://localhost:" + PORT);
+        console.log("También disponible en http://0.0.0.0:" + PORT);
+        console.log("Abre: http://127.0.0.1:" + PORT + "/alerta-n8n");
     });
     
